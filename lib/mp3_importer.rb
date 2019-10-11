@@ -17,6 +17,10 @@ class MP3Importer
     end
   end
   
+  def import 
+    files.each{|file_name| Song.new_by_filename(file_name)}
+  end
+  
 #   ["Action Bronson - Larry Csonka - indie.mp3",
 # "Thundercat - For Love I Come - dance.mp3",
 # "Real Estate - It's Real - hip-hop.mp3",
