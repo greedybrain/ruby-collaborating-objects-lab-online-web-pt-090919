@@ -11,10 +11,7 @@ class MP3Importer
   end
   
   def files 
-    directory = Dir[@path += '/**/*.mp3'].sort
-    parsed_files = directory.collect do |file|
-      file.match(/[A-Z].+\.mp3/).to_s
-    end
+    Dir.entries(@path).select{|entry| entry.include?('mp3')}
   end
   
   def import 
