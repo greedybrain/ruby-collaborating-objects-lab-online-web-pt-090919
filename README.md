@@ -1,7 +1,6 @@
 # Ruby Collaborating Objects Lab
 
 ## Objective
-
 - Gain a deeper understanding of object relations.
 - Build classes that interact with one another through associations and behavior.
 
